@@ -1,13 +1,9 @@
 import './App.css';
-import Counter from './counter';
-import PostsList from './posts';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Cart from './cart';
 import Products from './productlist';
-import { useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import ProductsDetails from './productdetails';
 import ConfirmOrders from './confirmOrders';
 

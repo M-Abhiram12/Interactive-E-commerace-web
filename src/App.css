@@ -1,7 +1,6 @@
 .product_parent {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -19,7 +18,7 @@
 .add_cart_btn {
   border: none;
   outline: none;
-  padding: 10px 10px;
+  padding: 10px 40px;
   background-color: rgb(2, 138, 59);
   color: white;
   border-radius: 10px;
@@ -29,14 +28,14 @@
 .buynow_btn {
   border: none;
   outline: none;
-  padding: 10px 10px;
+  padding: 10px 50px;
   background-color: rgb(9, 86, 134);
   color: white;
   border-radius: 10px;
   margin: 10px;
 }
 .anc_color {
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px 0px 0px !important;
   color: rgb(255, 255, 255) !important;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
@@ -69,11 +68,14 @@
   text-align: center;
   justify-content: center;
 }
+.header_search li {
+  margin-left: 20px;
+}
 
 .cart_notification {
   position: absolute;
-  top: 16px;
-  right: 29px;
+  top: 12px;
+  right: 78px;
   background-color: red;
   color: white;
   font-size: 12px;
@@ -156,11 +158,8 @@
 
 .search_icon {
   position: absolute;
-  right: 108px;
+  right: 175px;
   top: 25px;
-}
-
-.filter_icon {
 }
 
 .header {
@@ -177,7 +176,8 @@
   border: none;
   margin: 10px 50px;
   padding: 5px 8px;
-  border-radius: 10px;
+  border-radius: 8px;
+  height: 45px;
 }
 
 .filter_remove {
@@ -217,6 +217,13 @@
   border-radius: 10px;
 }
 
+.login_desk {
+  margin: 9px 12px 10px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
 .filter_ul {
   display: flex;
   flex-direction: column;
@@ -245,8 +252,6 @@
   border: 1px solid black;
 }
 
-.form_name {
-}
 .form_remove {
   font-weight: 500;
   right: 34px;
@@ -261,7 +266,7 @@
 .filter_class {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding: 100px 50px 0px;
 }
 .form-main {
   padding-top: 100px;
@@ -272,6 +277,9 @@
   justify-content: center;
   padding-top: 200px;
   font-size: 20px;
+  position: fixed;
+  top: 30%;
+  right: 50%;
 }
 .Loader-div {
   height: 100vh;
@@ -419,14 +427,34 @@
   align-items: center;
   padding-top: 100px;
 }
+.header_info_div ul {
+  margin: 43px 5px 5px 5px;
+}
+.header_info_div li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px 25px 25px 0px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px;
+}
+
+@media only screen and (max-width: 1250px) {
+}
 
 @media only screen and (max-width: 800px) {
   .product_images {
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 220px;
+  }
+  .search_input_formobile {
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 12px;
+    width: 140px;
   }
   .header_logo {
-    width: 80%;
+    width: 72%;
     padding: 2% 5%;
   }
   .search_icon {
@@ -442,6 +470,62 @@
   }
   .product_btn_div {
     display: flex;
-    padding-left: 100px;
+  }
+  .form_main_div {
+    right: 5%;
+    top: 16%;
+    width: 338px;
+  }
+  .product_list {
+    width: 44%;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+  }
+  .product_parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .add_cart_btn {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    margin: 2px;
+    padding: 6px 17px;
+  }
+  .buynow_btn {
+    padding: 1px 20px;
+    background-color: rgb(9, 86, 134);
+    color: white;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 3px 20px;
+  }
+  .filter_class {
+    padding-top: 70px;
+  }
+  .filter_btn {
+    padding: 2px 8px;
+    border-radius: 5px;
+    height: 45px;
+  }
+  .login_icon_mobile {
+    padding: 0px 25px;
+  }
+  .shpping_icon_mobile {
+    display: flex;
+    color: black;
+    padding: 1px 12px;
+  }
+  .mt_cart_head {
+    padding: 120px 10px 50px 10px;
+  }
+  .mt_cart_image {
+    width: 90%;
+  }
+  .cart_headline {
+    padding: 0px 10px 20px 90px;
   }
 }
