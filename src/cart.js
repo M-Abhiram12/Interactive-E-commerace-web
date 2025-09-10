@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
-  const { items, totalPrice, count } = useSelector((state) => state.cart);
+  const { items, totalPrice } = useSelector((state) => state.cart);
   const navigate = useNavigate();
 
   const confirmOrder = ()=> {
@@ -22,7 +22,7 @@ export default function Cart() {
       <div className="cart">
         {items.map((item, index) => (
           <div key={index} className="cart_parent">
-            <img className="cart_images" src={item.images[1]} />
+            <img className="cart_images" src={item.images[1]} alt="images" />
             <p className="p-4">
               {item.name} product cost- ₹{item.price}
             </p>
