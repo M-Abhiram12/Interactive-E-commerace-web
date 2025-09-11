@@ -555,7 +555,7 @@
   .product-details-para {
     width: 80%;
   }
-  .toastify{
+  .toastify {
     width: 75%;
     font-size: 15px;
     margin: 50px 0px 0px 90px;
@@ -563,5 +563,14 @@
   .cart_notification {
     top: 9px;
     right: 22px;
-}
+  }
+  .cart_images {
+    padding: 0px;
+    width: 166px;
+    height: 233px;
+  }
+  .cart_parent{
+   width: 48%;
+  }
+
 }
