@@ -13,7 +13,6 @@ export default function Header() {
         <>
             <nav className="navbar navbar-expand-lg  bg-light header">
 
-
                 {headerInfo &&
                     <div>
                         <div className="header_info_div">
