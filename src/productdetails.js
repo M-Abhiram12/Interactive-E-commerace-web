@@ -38,7 +38,7 @@ export default function ProductsDetails() {
                 <h2>{product.title}</h2>
                 <img className="productDetail_images" src={product.images[2]} alt={product.title} />
                 <p>Price: ₹{product.price}</p>
-                <p className="w-50">Description: {product.description}</p>
+                <p className="product-details-para">Description: {product.description}</p>
                 <button onClick={() => dispatch(loginForm(true))} className="buynow-prodetail_btn" >Buy now</button>
             </div>
 
@@ -48,16 +48,11 @@ export default function ProductsDetails() {
             <div className="similar_scroller">
                 {products.map((item) => (
                     <div className="similar_card" key={item.id}>
-                        <img src={item.images[1]} className="productDetalis_sim_img" alt={item.title} />
-                        <img src={item.images[2]} className="productDetalis_sim_img" alt={item.title} />
+                        <img src={item.images[1]} className="productDetalis_sim_img" alt={item.id} />
+                        <img src={item.images[2]} className="productDetalis_sim_img" alt={item.id} />
                     </div>
                 ))}
             </div>
-
-
-
-
-
         </div>
     );
 }

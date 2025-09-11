@@ -33,6 +33,7 @@ function App() {
         closeOnClick
         pauseOnHover
         draggable
+        className="toastify"
       />
     </>
   );
