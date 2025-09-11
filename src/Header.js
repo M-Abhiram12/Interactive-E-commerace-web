@@ -7,7 +7,7 @@ import { setSearchFilter, loginForm, headerInfoIcon } from "./api/productslice";
 
 export default function Header() {
     const count = useSelector((state) => state.cart.count);
-    const { headerInfo, searchText } = useSelector((state) => state.product);
+    const { headerInfo } = useSelector((state) => state.product);
     const dispatch = useDispatch();
     return (
         <>
